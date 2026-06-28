@@ -1,10 +1,10 @@
 # 🔬 Aetheria-HematoAI: Blood Cell Detection & Classification
-Web App | Python | YOLO11 | Flask
+Web App | Python | YOLO11 | Flask | Render
 
-A machine learning web app that predicts and classifies blood cells (Red Blood Cells, White Blood Cells, and Platelets) in microscopic images — deployed with an interactive Flask web interface.
+A machine learning web app that predicts and classifies blood cells (Red Blood Cells, White Blood Cells, and Platelets) in microscopic images — deployed live with a Flask web interface.
 
 ## 🌐 Live Demo
-🔗 [Click here to try the app](https://github.com/Maliniuppalapati/Blood_Cell_Classification_SmartBridge)
+🔗 **[Click here to try the app live on Render!](https://blood-cell-detection-4m72.onrender.com/)**
 
 Upload a microscopic blood smear image to get real-time bounding box annotations, cell counts, and an instantly downloadable PDF analysis report.
 
@@ -39,6 +39,7 @@ Aetheria-HematoAI/
 | **Object Detection** | YOLO11 (Ultralytics) |
 | **Deep Learning** | PyTorch (CPU-optimized) |
 | **Web Server** | Flask |
+| **Hosting Platform** | Render |
 | **Report Generation** | ReportLab (for PDF exports) |
 | **Model Storage** | PyTorch serialized weights (.pt) |
 | **Frontend Styling** | Custom CSS |
@@ -72,6 +73,7 @@ Evaluating the `best.pt` model on validation images yielded the following metric
 * Saved the best weights as `best.pt`.
 * Built an interactive Flask application (`app.py`) for drag-and-drop image uploads.
 * Implemented a **ReportLab** PDF generation routine to auto-create clinical summary files based on prediction cell counts.
+* Deployed the web app onto **Render** cloud platform.
 
 ## 🔑 Key Findings
 * **White Blood Cells (WBC)** achieved the highest accuracy with **96.7% Precision** and **100% Recall** due to their large morphology and distinct characteristics.
